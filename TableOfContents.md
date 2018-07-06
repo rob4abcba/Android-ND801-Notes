@@ -2,12 +2,12 @@
 
 ## Core Curriculum Part1: Nanodegree Orientation
 ### CCP1 Lesson1 Welcome to Your Nanodegree
-### CCP1 L1.1 Your Goals and Motivations
-### CCP1 L1.2 Welcome to Your Nanodegree
-### CCP1 L1.3 Nanodegree Support Resources
-### CCP1 L1.4 Meet the Careers Team
-### CCP1 L1.5 Access Your Career Portal
-### CCP1 L1.6 Your Udacity Profile
+#### CCP1 L1.1 Your Goals and Motivations
+#### CCP1 L1.2 Welcome to Your Nanodegree
+#### CCP1 L1.3 Nanodegree Support Resources
+#### CCP1 L1.4 Meet the Careers Team
+#### CCP1 L1.5 Access Your Career Portal
+#### CCP1 L1.6 Your Udacity Profile
 
 ## Core Curriculum Part2: Developing Android Apps
 ### CCP2 Lesson1 Create Project Sunshine
@@ -39,3 +39,8 @@
 ### CCP2 Lesson7 Lifecycle
 #### CCP2 L7.1 Introduction
 #### CCP2 L7.X Recap
+
+### CCP2 Lesson8 Preferences
+#### CCP2 L8.1 Introduction
+#### CCP2 L8.X Recap
+
