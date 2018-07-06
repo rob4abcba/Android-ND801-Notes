@@ -1,17 +1,41 @@
 # Android ND801 Table of Contents
+
 ## Core Curriculum Part1: Nanodegree Orientation
-### Core Curriculum Part1 Lesson 1.1 Your Goals and Motivations
-### Core Curriculum Part1 Lesson 1.2 Welcome to Your Nanodegree
-### Core Curriculum Part1 Lesson 1.3 Nanodegree Support Resources
-### Core Curriculum Part1 Lesson 1.4 Meet the Careers Team
-### Core Curriculum Part1 Lesson 1.5 Access Your Career Portal
-### Core Curriculum Part1 Lesson 1.6 Your Udacity Profile
+### CCP1 Lesson1 Welcome to Your Nanodegree
+### CCP1 L1.1 Your Goals and Motivations
+### CCP1 L1.2 Welcome to Your Nanodegree
+### CCP1 L1.3 Nanodegree Support Resources
+### CCP1 L1.4 Meet the Careers Team
+### CCP1 L1.5 Access Your Career Portal
+### CCP1 L1.6 Your Udacity Profile
+
 ## Core Curriculum Part2: Developing Android Apps
-### Core Curriculum Part2 Lesson 1.0 Create Project Sunshine
-#### Core Curriculum Part2 Lesson 1.1 Introduction
-#### Core Curriculum Part2 Lesson 1.2 Are your ready?
-#### Core Curriculum Part2 Lesson 1.26 Project Recap
-### Core Curriculum Part2 Lesson 2.0 Connect to the Internet
-#### Core Curriculum Part2 Lesson 2.1 Introduction
-#### Core Curriculum Part2 Lesson 2.2 Logging
-#### Core Curriculum Part2 Lesson 2.26 Recap
+### CCP2 Lesson1 Create Project Sunshine
+#### CCP2 L1.1 Introduction
+#### CCP2 L1.2 Are your ready?
+#### CCP2 L1.26 Project Recap
+
+### CCP2 Lesson2 Connect to the Internet
+#### CCP2 L2.1 Introduction
+#### CCP2 L2.2 Logging
+#### CCP2 L2.26 Recap
+
+### CCP2 Lesson3 Sandwich Club
+#### CCP2 L3.1 Introduction
+#### CCP2 L3.X Recap
+
+### CCP2 Lesson4 Recycler View
+#### CCP2 L4.1 Introduction
+#### CCP2 L4.X Recap
+
+### CCP2 Lesson5 Intents
+#### CCP2 L5.1 Introduction
+#### CCP2 L5.X Recap
+
+### CCP2 Lesson6 Project Popular Movies Stage1
+#### CCP2 L6.1 Introduction
+#### CCP2 L6.X Recap
+
+### CCP2 Lesson7 Lifecycle
+#### CCP2 L7.1 Introduction
+#### CCP2 L7.X Recap
