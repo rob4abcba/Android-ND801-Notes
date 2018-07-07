@@ -24,16 +24,135 @@ How do we tell Android that we'd like a menu item to show up as a button on the 
 Add the showAsAction XML attribute to the menu item
 
 
+## S02.02-Solution-Menus
+
+### app > java > MainActivity.java
+
+package com.example.android.sunshine;
+
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.widget.TextView;
+
+import com.example.android.sunshine.data.SunshinePreferences;
+import com.example.android.sunshine.utilities.NetworkUtils;
+import com.example.android.sunshine.utilities.OpenWeatherJsonUtils;
+
+import java.net.URL;
+
+public class MainActivity extends AppCompatActivity {
+
+    private TextView mWeatherTextView;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_forecast);
+
+        /*
+         * Using findViewById, we get a reference to our TextView from xml. This allows us to
+         * do things like set the text of the TextView.
+         */
+        mWeatherTextView = (TextView) findViewById(R.id.tv_weather_data);
+
+        /* Once all of our views are setup, we can load the weather data. */
+        loadWeatherData();
+    }
+
+    /**
+     * This method will get the user's preferred location for weather, and then tell some
+     * background method to get the weather data in the background.
+     */
+    private void loadWeatherData() {
+        String location = SunshinePreferences.getPreferredWeatherLocation(this);
+        new FetchWeatherTask().execute(location);
+    }
+
+    public class FetchWeatherTask extends AsyncTask<String, Void, String[]> {
+
+        @Override
+        protected String[] doInBackground(String... params) {
+
+            /* If there's no zip code, there's nothing to look up. */
+            if (params.length == 0) {
+                return null;
+            }
+
+            String location = params[0];
+            URL weatherRequestUrl = NetworkUtils.buildUrl(location);
+
+            try {
+                String jsonWeatherResponse = NetworkUtils
+                        .getResponseFromHttpUrl(weatherRequestUrl);
+
+                String[] simpleJsonWeatherData = OpenWeatherJsonUtils
+                        .getSimpleWeatherStringsFromJson(MainActivity.this, jsonWeatherResponse);
+
+                return simpleJsonWeatherData;
+
+            } catch (Exception e) {
+                e.printStackTrace();
+                return null;
+            }
+        }
+
+        @Override
+        protected void onPostExecute(String[] weatherData) {
+            if (weatherData != null) {
+                /*
+                 * Iterate through the array and append the Strings to the TextView. The reason why we add
+                 * the "\n\n\n" after the String is to give visual separation between each String in the
+                 * TextView. Later, we'll learn about a better way to display lists of data.
+                 */
+                for (String weatherString : weatherData) {
+                    mWeatherTextView.append((weatherString) + "\n\n\n");
+                }
+            }
+        }
+    }
 
 
-https://developer.android.com/guide/topics/resources/menu-resource
+    // COMPLETED (5) Override onCreateOptionsMenu to inflate the menu for this Activity
+    // COMPLETED (6) Return true to display the menu
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        /* Use AppCompatActivity's method getMenuInflater to get a handle on the menu inflater */
+        MenuInflater inflater = getMenuInflater();
+        /* Use the inflater's inflate method to inflate our menu layout to this menu */
+        inflater.inflate(R.menu.forecast, menu);
+        /* Return true so that the menu is displayed in the Toolbar */
+        return true;
+    }
 
-Menu resource
+    // COMPLETED (7) Override onOptionsItemSelected to handle clicks on the refresh button
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.action_refresh) {
+            mWeatherTextView.setText("");
+            loadWeatherData();
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+}
+
+## Outside Articles
+
+### https://developer.android.com/guide/topics/resources/menu-resource
+
+#### Menu resource
 A menu resource defines an application menu (Options Menu, Context Menu, or submenu) that can be inflated with MenuInflater.
 
 For a guide to using menus, see the Menus developer guide.
 
-file location:
+#### file location:
 res/menu/filename.xml
 The filename will be used as the resource ID.
 compiled resource datatype:
@@ -254,236 +373,11 @@ arrow_forward String
 Content and code samples on this page are subject to the licenses described in the Content License. Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated April 17, 2018
-Menu resource
-A menu resource defines an application menu (Options Menu, Context Menu, or submenu) that can be inflated with MenuInflater.
-
-For a guide to using menus, see the Menus developer guide.
-
-file location:
-res/menu/filename.xml
-The filename will be used as the resource ID.
-compiled resource datatype:
-Resource pointer to a Menu (or subclass) resource.
-resource reference:
-In Java: R.menu.filename
-In XML: @[package:]menu.filename
-syntax:
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@[+][package:]id/resource_name"
-          android:title="string"
-          android:titleCondensed="string"
-          android:icon="@[package:]drawable/drawable_resource_name"
-          android:onClick="method name"
-          android:showAsAction=["ifRoom" | "never" | "withText" | "always" | "collapseActionView"]
-          android:actionLayout="@[package:]layout/layout_resource_name"
-          android:actionViewClass="class name"
-          android:actionProviderClass="class name"
-          android:alphabeticShortcut="string"
-          android:alphabeticModifiers=["META" | "CTRL" | "ALT" | "SHIFT" | "SYM" | "FUNCTION"]
-          android:numericShortcut="string"
-          android:numericModifiers=["META" | "CTRL" | "ALT" | "SHIFT" | "SYM" | "FUNCTION"]
-          android:checkable=["true" | "false"]
-          android:visible=["true" | "false"]
-          android:enabled=["true" | "false"]
-          android:menuCategory=["container" | "system" | "secondary" | "alternative"]
-          android:orderInCategory="integer" />
-    <group android:id="@[+][package:]id/resource name"
-           android:checkableBehavior=["none" | "all" | "single"]
-           android:visible=["true" | "false"]
-           android:enabled=["true" | "false"]
-           android:menuCategory=["container" | "system" | "secondary" | "alternative"]
-           android:orderInCategory="integer" >
-        <item />
-    </group>
-    <item >
-        <menu>
-          <item />
-        </menu>
-    </item>
-</menu>
-elements:
-<menu>
-Required. This must be the root node. Contains <item> and/or <group> elements.
-attributes:
-
-xmlns:android
-XML namespace. Required. Defines the XML namespace, which must be "http://schemas.android.com/apk/res/android".
-<item>
-A menu item. May contain a <menu> element (for a Sub Menu). Must be a child of a <menu> or <group> element.
-attributes:
-
-android:id
-Resource ID. A unique resource ID. To create a new resource ID for this item, use the form: "@+id/name". The plus symbol indicates that this should be created as a new ID.
-android:title
-String resource. The menu title as a string resource or raw string.
-android:titleCondensed
-String resource. A condensed title as a string resource or a raw string. This title is used for situations in which the normal title is too long.
-android:icon
-Drawable resource. An image to be used as the menu item icon.
-android:onClick
-Method name. The method to call when this menu item is clicked. The method must be declared in the activity as public and accept a MenuItem as its only parameter, which indicates the item clicked. This method takes precedence over the standard callback to onOptionsItemSelected(). See the example at the bottom.
-Warning: If you obfuscate your code using ProGuard (or a similar tool), be sure to exclude the method you specify in this attribute from renaming, because it can break the functionality.
-
-Introduced in API Level 11.
-
-android:showAsAction
-Keyword. When and how this item should appear as an action item in the app bar. A menu item can appear as an action item only when the activity includes an app bar. Valid values:
-Value	Description
-ifRoom	Only place this item in the app bar if there is room for it. If there is not room for all the items marked "ifRoom", the items with the lowest orderInCategory values are displayed as actions, and the remaining items are displayed in the overflow menu.
-withText	Also include the title text (defined by android:title) with the action item. You can include this value along with one of the others as a flag set, by separating them with a pipe |.
-never	Never place this item in the app bar. Instead, list the item in the app bar's overflow menu.
-always	Always place this item in the app bar. Avoid using this unless it's critical that the item always appear in the action bar. Setting multiple items to always appear as action items can result in them overlapping with other UI in the app bar.
-collapseActionView	The action view associated with this action item (as declared by android:actionLayout or android:actionViewClass) is collapsible.
-Introduced in API Level 14.
-See the Adding the App Bar training class for more information.
-
-Introduced in API Level 11.
-
-android:actionLayout
-Layout resource. A layout to use as the action view.
-See Action Views and Action Providers for more information.
-
-Introduced in API Level 11.
-
-android:actionViewClass
-Class name. A fully-qualified class name for the View to use as the action view. For example, "android.widget.SearchView" to use SearchView as an action view.
-See Action Views and Action Providers for more information.
-
-Warning: If you obfuscate your code using ProGuard (or a similar tool), be sure to exclude the class you specify in this attribute from renaming, because it can break the functionality.
-
-Introduced in API Level 11.
-
-android:actionProviderClass
-Class name. A fully-qualified class name for the ActionProvider to use in place of the action item. For example, "android.widget.ShareActionProvider" to use ShareActionProvider.
-See Action Views and Action Providers for more information.
-
-Warning: If you obfuscate your code using ProGuard (or a similar tool), be sure to exclude the class you specify in this attribute from renaming, because it can break the functionality.
-
-Introduced in API Level 14.
-
-android:alphabeticShortcut
-Char. A character for the alphabetic shortcut key.
-android:numericShortcut
-Integer. A number for the numeric shortcut key.
-android:alphabeticModifiers
-Keyword. A modifier for the menu item's alphabetic shortcut. The default value corresponds to the Control key. Valid values:
-Value	Description
-META	Corresponds to the Meta meta key
-CTRL	Corresponds to the Control meta key
-ALT	Corresponds to the Alt meta key
-SHIFT	Corresponds to the Shift meta key
-SYM	Corresponds to the Sym meta key
-FUNCTION	Corresponds to the Function meta key
-Note: You can specify multiple keywords in an attribute. For example, android:alphabeticModifiers="CTRL|SHIFT" indicates that to trigger the corresponding menu item, the user needs to press both Control and Shift meta keys along with the shortcut.
-
-You can use the setAlphabeticShortcut() method to set the attribute values programmatically. For more information about the alphabeticModifier attribute, go to alphabeticModifiers.
-
-android:numericModifiers
-Keyword. A modifier for the menu item's numeric shortcut. The default value corresponds to the Control key. Valid values:
-Value	Description
-META	Corresponds to the Meta meta key
-CTRL	Corresponds to the Control meta key
-ALT	Corresponds to the Alt meta key
-SHIFT	Corresponds to the Shift meta key
-SYM	Corresponds to the Sym meta key
-FUNCTION	Corresponds to the Function meta key
-Note: You can specify multiple keywords in an attribute. For example, android:numericModifiers="CTRL|SHIFT" indicates that to trigger the corresponding menu item, the user needs to press both Control and Shift meta keys along with the shortcut.
-
-You can use the setNumericShortcut() method to set the attribute values programmatically. For more information about the numericModifier attribute, go to numericModifiers.
-
-android:checkable
-Boolean. "true" if the item is checkable.
-android:checked
-Boolean. "true" if the item is checked by default.
-android:visible
-Boolean. "true" if the item is visible by default.
-android:enabled
-Boolean. "true" if the item is enabled by default.
-android:menuCategory
-Keyword. Value corresponding to Menu CATEGORY_* constants, which define the item's priority. Valid values:
-Value	Description
-container	For items that are part of a container.
-system	For items that are provided by the system.
-secondary	For items that are user-supplied secondary (infrequently used) options.
-alternative	For items that are alternative actions on the data that is currently displayed.
-android:orderInCategory
-Integer. The order of "importance" of the item, within a group.
-<group>
-A menu group (to create a collection of items that share traits, such as whether they are visible, enabled, or checkable). Contains one or more <item> elements. Must be a child of a <menu> element.
-attributes:
-
-android:id
-Resource ID. A unique resource ID. To create a new resource ID for this item, use the form: "@+id/name". The plus symbol indicates that this should be created as a new ID.
-android:checkableBehavior
-Keyword. The type of checkable behavior for the group. Valid values:
-Value	Description
-none	Not checkable
-all	All items can be checked (use checkboxes)
-single	Only one item can be checked (use radio buttons)
-android:visible
-Boolean. "true" if the group is visible.
-android:enabled
-Boolean. "true" if the group is enabled.
-android:menuCategory
-Keyword. Value corresponding to Menu CATEGORY_* constants, which define the group's priority. Valid values:
-Value	Description
-container	For groups that are part of a container.
-system	For groups that are provided by the system.
-secondary	For groups that are user-supplied secondary (infrequently used) options.
-alternative	For groups that are alternative actions on the data that is currently displayed.
-android:orderInCategory
-Integer. The default order of the items within the category.
-example:
-XML file saved at res/menu/example_menu.xml:
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/item1"
-          android:title="@string/item1"
-          android:icon="@drawable/group_item1_icon"
-          android:showAsAction="ifRoom|withText"/>
-    <group android:id="@+id/group">
-        <item android:id="@+id/group_item1"
-              android:onClick="onGroupItemClick"
-              android:title="@string/group_item1"
-              android:icon="@drawable/group_item1_icon" />
-        <item android:id="@+id/group_item2"
-              android:onClick="onGroupItemClick"
-              android:title="@string/group_item2"
-              android:icon="@drawable/group_item2_icon" />
-    </group>
-    <item android:id="@+id/submenu"
-          android:title="@string/submenu_title"
-          android:showAsAction="ifRoom|withText" >
-        <menu>
-            <item android:id="@+id/submenu_item1"
-                  android:title="@string/submenu_item1" />
-        </menu>
-    </item>
-</menu>
-The following application code inflates the menu from the onCreateOptionsMenu(Menu) callback and also declares the on-click callback for two of the items:
-
-public boolean onCreateOptionsMenu(Menu menu) {
-    MenuInflater inflater = getMenuInflater();
-    inflater.inflate(R.menu.example_menu, menu);
-    return true;
-}
-
-public void onGroupItemClick(MenuItem item) {
-    // One of the group items (using the onClick attribute) was clicked
-    // The item parameter passed here indicates which item it is
-    // All other menu item clicks are handled by onOptionsItemSelected()
-}
-Previous
-arrow_back Layout
-Next
-arrow_forward String
-Content and code samples on this page are subject to the licenses described in the Content License. Java is a registered trademark of Oracle and/or its affiliates.
-
-Last updated April 17, 2018
 
 
-Menus
-Menus are a common user interface component in many types of applications. To provide a familiar and consistent user experience, you should use the Menu APIs to present user actions and other options in your activities.
+
+### Menus
+Menus  a common user interface component in many types of applications. To provide a familiar and consistent user experience, you should use the Menu APIs to present user actions and other options in your activities.
 
 Beginning with Android 3.0 (API level 11), Android-powered devices are no longer required to provide a dedicated Menu button. With this change, Android apps should migrate away from a dependence on the traditional 6-item menu panel and instead provide an app bar to present common user actions.
 
@@ -499,11 +393,11 @@ The contextual action mode displays action items that affect the selected conten
 
 See the section about Creating Contextual Menus.
 
-Popup menu
+#### Popup menu
 A popup menu displays a list of items in a vertical list that's anchored to the view that invoked the menu. It's good for providing an overflow of actions that relate to specific content or to provide options for a second part of a command. Actions in a popup menu should not directly affect the corresponding content—that's what contextual actions are for. Rather, the popup menu is for extended actions that relate to regions of content in your activity.
 See the section about Creating a Popup Menu.
 
-Defining a Menu in XML
+#### Defining a Menu in XML
 For all menu types, Android provides a standard XML format to define menu items. Instead of building a menu in your activity's code, you should define a menu and all its items in an XML menu resource. You can then inflate the menu resource (load it as a Menu object) in your activity or fragment.
 
 Using a menu resource is a good practice for a few reasons:
@@ -589,7 +483,7 @@ You can also add menu items using add() and retrieve items with findItem() to re
 
 If you've developed your application for Android 2.3.x and lower, the system calls onCreateOptionsMenu() to create the options menu when the user opens the menu for the first time. If you've developed for Android 3.0 and higher, the system calls onCreateOptionsMenu() when starting the activity, in order to show items to the app bar.
 
-Handling click events
+#### Handling click events
 When the user selects an item from the options menu (including action items in the app bar), the system calls your activity's onOptionsItemSelected() method. This method passes the MenuItem selected. You can identify the item by calling getItemId(), which returns the unique ID for the menu item (defined by the android:id attribute in the menu resource or with an integer given to the add() method). You can match this ID against known menu items to perform the appropriate action. For example:
 
 @Override
@@ -614,7 +508,7 @@ Tip: Android 3.0 adds the ability for you to define the on-click behavior for a 
 
 Tip: If your application contains multiple activities and some of them provide the same options menu, consider creating an activity that implements nothing except the onCreateOptionsMenu() and onOptionsItemSelected() methods. Then extend this class for each activity that should share the same options menu. This way, you can manage one set of code for handling menu actions and each descendant class inherits the menu behaviors. If you want to add menu items to one of the descendant activities, override onCreateOptionsMenu() in that activity. Call super.onCreateOptionsMenu(menu) so the original menu items are created, then add new menu items with menu.add(). You can also override the super class's behavior for individual menu items.
 
-Changing menu items at runtime
+#### Changing menu items at runtime
 After the system calls onCreateOptionsMenu(), it retains an instance of the Menu you populate and will not call onCreateOptionsMenu() again unless the menu is invalidated for some reason. However, you should use onCreateOptionsMenu() only to create the initial menu state and not to make changes during the activity lifecycle.
 
 If you want to modify the options menu based on events that occur during the activity lifecycle, you can do so in the onPrepareOptionsMenu() method. This method passes you the Menu object as it currently exists so you can modify it, such as add, remove, or disable items. (Fragments also provide an onPrepareOptionsMenu() callback.)
@@ -625,7 +519,7 @@ On Android 3.0 and higher, the options menu is considered to always be open when
 
 Note: You should never change items in the options menu based on the View currently in focus. When in touch mode (when the user is not using a trackball or d-pad), views cannot take focus, so you should never use focus as the basis for modifying items in the options menu. If you want to provide menu items that are context-sensitive to a View, use a Context Menu.
 
-Creating Contextual Menus
+#### Creating Contextual Menus
 
 Figure 3. Screenshots of a floating context menu (left) and the contextual action bar (right).
 
@@ -637,7 +531,7 @@ In a floating context menu. A menu appears as a floating list of menu items (sim
 In the contextual action mode. This mode is a system implementation of ActionMode that displays a contextual action bar at the top of the screen with action items that affect the selected item(s). When this mode is active, users can perform an action on multiple items at once (if your app allows it).
 Note: The contextual action mode is available on Android 3.0 (API level 11) and higher and is the preferred technique for displaying contextual actions when available. If your app supports versions lower than 3.0 then you should fall back to a floating context menu on those devices.
 
-Creating a floating context menu
+#### Creating a floating context menu
 To provide a floating context menu:
 
 Register the View to which the context menu should be associated by calling registerForContextMenu() and pass it the View.
@@ -676,7 +570,7 @@ The getItemId() method queries the ID for the selected menu item, which you shou
 
 When you successfully handle a menu item, return true. If you don't handle the menu item, you should pass the menu item to the superclass implementation. If your activity includes fragments, the activity receives this callback first. By calling the superclass when unhandled, the system passes the event to the respective callback method in each fragment, one at a time (in the order each fragment was added) until true or false is returned. (The default implementation for Activity and android.app.Fragment return false, so you should always call the superclass when unhandled.)
 
-Using the contextual action mode
+#### Using the contextual action mode
 The contextual action mode is a system implementation of ActionMode that focuses user interaction toward performing contextual actions. When a user enables this mode by selecting an item, a contextual action bar appears at the top of the screen to present actions the user can perform on the currently selected item(s). While this mode is enabled, the user can select multiple items (if you allow it), deselect items, and continue to navigate within the activity (as much as you're willing to allow). The action mode is disabled and the contextual action bar disappears when the user deselects all items, presses the BACK button, or selects the Done action on the left side of the bar.
 
 Note: The contextual action bar is not necessarily associated with the app bar. They operate independently, even though the contextual action bar visually overtakes the app bar position.
@@ -812,7 +706,7 @@ That's it. Now when the user selects an item with a long-click, the system calls
 
 In some cases in which the contextual actions provide common action items, you might want to add a checkbox or a similar UI element that allows users to select items, because they might not discover the long-click behavior. When a user selects the checkbox, you can invoke the contextual action mode by setting the respective list item to the checked state with setItemChecked().
 
-Creating a Popup Menu
+#### Creating a Popup Menu
 
 Figure 4. A popup menu in the Gmail app, anchored to the overflow button at the top-right.
 
@@ -850,7 +744,7 @@ In API level 14 and higher, you can combine the two lines that inflate the menu 
 
 The menu is dismissed when the user selects an item or touches outside the menu area. You can listen for the dismiss event using PopupMenu.OnDismissListener.
 
-Handling click events
+#### Handling click events
 To perform an action when the user selects a menu item, you must implement the PopupMenu.OnMenuItemClickListener interface and register it with your PopupMenu by calling setOnMenuItemclickListener(). When the user selects an item, the system calls the onMenuItemClick() callback in your interface.
 
 For example:
@@ -877,7 +771,7 @@ public boolean onMenuItemClick(MenuItem item) {
             return false;
     }
 }
-Creating Menu Groups
+#### Creating Menu Groups
 A menu group is a collection of menu items that share certain traits. With a group, you can:
 
 Show or hide all items with setGroupVisible()
@@ -902,7 +796,7 @@ Here's an example menu resource that includes a group:
 </menu>
 The items that are in the group appear at the same level as the first item—all three items in the menu are siblings. However, you can modify the traits of the two items in the group by referencing the group ID and using the methods listed above. The system will also never separate grouped items. For example, if you declare android:showAsAction="ifRoom" for each item, they will either both appear in the action bar or both appear in the action overflow.
 
-Using checkable menu items
+#### Using checkable menu items
 
 Figure 5. Screenshot of a submenu with checkable items.
 
@@ -949,12 +843,12 @@ If you don't set the checked state this way, then the visible state of the item 
 
 Note: Checkable menu items are intended to be used only on a per-session basis and not saved after the application is destroyed. If you have application settings that you would like to save for the user, you should store the data using Shared Preferences.
 
-Adding Menu Items Based on an Intent
+#### Adding Menu Items Based on an Intent
 Sometimes you'll want a menu item to launch an activity using an Intent (whether it's an activity in your application or another application). When you know the intent you want to use and have a specific menu item that should initiate the intent, you can execute the intent with startActivity() during the appropriate on-item-selected callback method (such as the onOptionsItemSelected() callback).
 
 However, if you are not certain that the user's device contains an application that handles the intent, then adding a menu item that invokes it can result in a non-functioning menu item, because the intent might not resolve to an activity. To solve this, Android lets you dynamically add menu items to your menu when Android finds activities on the device that handle your intent.
 
-To add menu items based on available activities that accept an intent:
+#### To add menu items based on available activities that accept an intent:
 
 Define an intent with the category CATEGORY_ALTERNATIVE and/or CATEGORY_SELECTED_ALTERNATIVE, plus any other requirements.
 Call Menu.addIntentOptions(). Android then searches for any applications that can perform the intent and adds them to your menu.
