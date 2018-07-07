@@ -9,20 +9,22 @@ Inside of the res directory, are sub folder for the following types of resources
 This information can also be found here.
 
 ### Some Common Resource Types
-Name	What's Stored Here
-values	XML files that contain simple values, such as string or integers
-drawable	A bunch of visual files, including Bitmap file types and shapes. More information is here
-layouts	XML layouts for your app
+Name  |	What's Stored Here
+----  | ------------------
+values	| XML files that contain simple values, such as string or integers
+drawable | A bunch of visual files, including Bitmap file types and shapes. More information is here
+layouts	| XML layouts for your app
 
 ### Other Resource Types
-Name	What's stored here
-animator	XML files for property animations
-anim	XML files for tween animations
-color	XML files that define state list colors
-mipmap	Drawable files for launcher icons
-menu	XML files that define application menus
-raw	Resource file for arbitrary files saved in their raw form. For example, you could put audio files here. (You might also be interested in the assets folder, depending on how you use that audio)
-xml	Arbitrary XML; if you have XML configuration files, this is a good place to put them
+Name	| What's stored here
+----  | ------------------
+animator|	XML files for property animations
+anim|	XML files for tween animations
+color|	XML files that define state list colors
+mipmap|	Drawable files for launcher icons
+menu|	XML files that define application menus
+raw|	Resource file for arbitrary files saved in their raw form. For example, you could put audio files here. (You might also be interested in the assets folder, depending on how you use that audio)
+xml|	Arbitrary XML; if you have XML configuration files, this is a good place to put them
 
 ## Why Resources
 You should always keep things like images and layouts separate in the res folder. Keeping resource files and values independent helps you easily maintain them if you need to update, say, all your button images to match a new style. The Android Framework also easily allows for alternative resources that support specific device configurations such as different languages or screen sizes. Providing a customized experience for users from different locations or on different devices becomes increasingly important as more of the world comes online and more devices come on the market. We will see how to provide alternate resources for different configurations and locals later in this course.
