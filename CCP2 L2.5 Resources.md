@@ -8,13 +8,13 @@ Inside of the res directory, are sub folder for the following types of resources
 ## Different Resource Directories
 This information can also be found here.
 
-## Some Common Resource Types
+### Some Common Resource Types
 Name	What's Stored Here
 values	XML files that contain simple values, such as string or integers
 drawable	A bunch of visual files, including Bitmap file types and shapes. More information is here
 layouts	XML layouts for your app
 
-## Other Resource Types
+### Other Resource Types
 Name	What's stored here
 animator	XML files for property animations
 anim	XML files for tween animations
