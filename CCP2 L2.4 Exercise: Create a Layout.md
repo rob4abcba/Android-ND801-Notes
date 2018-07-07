@@ -3,6 +3,8 @@ https://classroom.udacity.com/nanodegrees/nd801/parts/9bb83157-0407-47dc-b0c4-c3
 
 https://www.youtube.com/watch?v=DL4kO9M73i4
 
+https://quizlet.com/304348833/android-ccp2-l24-exercise-create-a-layout-flash-cards/
+
 At 1:00, the layout_width of EditText is set to match_parent. This value should be set to wrap_content to match the TODO task in the exercise.
 
 Now it's your turn. Create our "Github Query" Layout, following all the TODOs in the exercise, and attach it to your Java code. Have fun!
