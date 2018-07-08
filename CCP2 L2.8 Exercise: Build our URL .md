@@ -1,4 +1,4 @@
-
+0:20 RL Ctrl + Shift + F = searches for the string starting for the current selected folder down through the entire filepath hierarchy (i.e. subfolders) 
 
 Build the Url that will be used to query Github and display it when the Search button is pressed.
 
