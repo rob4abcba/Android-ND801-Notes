@@ -2,17 +2,11 @@
 
 Now it's your turn! Follow the TODOS. But it will crash when you run it.
 
+![screen shot 2018-07-09 at 1 39 04 am](https://user-images.githubusercontent.com/9452839/42461369-3341b338-8355-11e8-9e81-644a7a2c559a.png)
+
+
 ## Exercise Code
 Exercise: T02.04-Exercise-ConnectingToTheInternet
-
-
-
-
-
-
-
-
-
 
 
 ## Solution Code
