@@ -1,8 +1,19 @@
+# CCP2 L2.12 Exercise: Connect to the Internet
 
 Now it's your turn! Follow the TODOS. But it will crash when you run it.
 
 ## Exercise Code
 Exercise: T02.04-Exercise-ConnectingToTheInternet
+
+
+
+
+
+
+
+
+
+
 
 ## Solution Code
 
