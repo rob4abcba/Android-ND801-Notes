@@ -124,3 +124,4 @@ Bottom Pane > Logcat
     Process: com.example.android.datafrominternet, PID: 3117
     android.os.NetworkOnMainThreadException
 
+Great work! If you're running on Android Honeycomb or higher, the answer is C. In Gingerbread you could technically still do this, but it was bad practice.
