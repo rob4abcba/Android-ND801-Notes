@@ -116,5 +116,11 @@ public class MainActivity extends AppCompatActivity {
 ## QUESTION 2 OF 2
 Look in the Android Monitor logcat. What error do you see when the app tries to connect to the Internet?
 
+Bottom Pane > Logcat
 
+07-09 08:54:58.572 3117-3117/com.example.android.datafrominternet D/NetworkSecurityConfig: No Network Security Config specified, using platform default
+07-09 08:54:58.679 3117-3117/com.example.android.datafrominternet D/AndroidRuntime: Shutting down VM
+07-09 08:54:58.804 3117-3117/com.example.android.datafrominternet E/AndroidRuntime: FATAL EXCEPTION: main
+    Process: com.example.android.datafrominternet, PID: 3117
+    android.os.NetworkOnMainThreadException
 
