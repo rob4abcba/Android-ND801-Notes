@@ -1,6 +1,19 @@
 
 Now it's your turn!
 
+
+Create GithubQueryTask as an inner class of MainActivity, with the types URL, Void, and String.
+
+Override doInBackground to query Github and return a string
+
+Override onPostExecute to set our githubSearchResults text view
+
+Instantiate and call GithubQueryTask in the makeGithubSearchQuery function
+
+
+
+
+
 Exercise Code
 Exercise: T02.05-Exercise-CreateAsyncTask
 
