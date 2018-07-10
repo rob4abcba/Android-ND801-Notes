@@ -34,6 +34,15 @@
 #### CCP2 L2.16 Quiz: Create an AsyncTask
 #### CCP2 L2.17 Exercise: Missing Permissions
 #### CCP2 L2.18 Exercise: Add Polish
+#### CCP2 L2.19 JSON Format
+#### CCP2 L2.20 Quiz: JSON by Hand
+#### CCP2 L2.21 Quiz: Parse JSON
+#### CCP2 L2.22 Exercise: Networking
+#### CCP2 L2.23 Exercise: Menus
+#### CCP2 L2.24 Exercise: Add Loading Polish
+#### CCP2 L2.25 Refresh Bad
+#### CCP2 L2.26 Recap
+
 
 ### CCP2 Lesson3 Sandwich Club
 #### CCP2 L3.1 Introduction
