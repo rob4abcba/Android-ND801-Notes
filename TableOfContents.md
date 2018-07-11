@@ -50,7 +50,30 @@
 
 ### CCP2 Lesson4 Recycler View
 #### CCP2 L4.1 Introduction
-#### CCP2 L4.X Recap
+#### CCP2 L4.2 Why RecyclerView?
+#### CCP2 L4.3 How RecyclerView Works
+#### CCP2 L4.4 Using RecyclerView
+#### CCP2 L4.4 ViewHolders RecyclerView
+#### CCP2 L4.5 Why ViewHolders?
+#### CCP2 L4.6 Quiz: findViewById() calls
+#### CCP2 L4.7 Visualizing ViewHolders
+#### CCP2 L4.8 Creating RecyclerView Layout
+#### CCP2 L4.9 Exercise: Create RecyclerView
+#### CCP2 L4.10 Items and ViewHolders
+#### CCP2 L4.11 Exercise: Items and ViewHolders
+#### CCP2 L4.12 RecyclerView and Adapters
+#### CCP2 L4.13 Quiz: Adapters and RecyclerView
+#### CCP2 L4.14 Creating an Adapter
+#### CCP2 L4.15 Exercise: Create an Adapter
+#### CCP2 L4.16 RecyclerView Layout Manager
+#### CCP2 L4.17 Wiring Up RecyclerView
+#### CCP2 L4.18 Exercise: Wiring Up RecyclerView
+#### CCP2 L4.19 Visualizing Recycling
+#### CCP2 L4.20 Responding to Item Clicks
+#### CCP2 L4.21 Exercise: Click Handling
+#### CCP2 L4.22 Exercise: Create a Recycler View
+#### CCP2 L4.23 Exercise: Click Handling
+#### CCP2 L4.24 Recap
 
 ### CCP2 Lesson5 Intents
 #### CCP2 L5.1 Introduction
