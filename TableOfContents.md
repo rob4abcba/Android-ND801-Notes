@@ -86,8 +86,22 @@
 #### CCP2 L5.8 Quiz: Exercise: Start an Activity
 #### CCP2 L5.9 Passing Data Between Activities
 #### CCP2 L5.10 Quiz: Exercise: Pass Data
-
-#### CCP2 L5.X Recap
+#### CCP2 L5.11 What are Implicit Intents?
+#### CCP2 L5.12 Creating Implicit Intents
+#### CCP2 L5.13 Quiz: Exercise: Open a Web Page
+#### CCP2 L5.14 Understanding URIs
+#### CCP2 L5.15 Quiz: Identify Parts of URIs
+#### CCP2 L5.16 Creating a Map Intent
+#### CCP2 L5.17 Quiz: Exercise: Show a Map
+#### CCP2 L5.18 Sharing is Caring!
+#### CCP2 L5.19 Media Types
+#### CCP2 L5.20 Implementing a Share Intent
+#### CCP2 L5.21 Quiz: Exercise: Create a Share Intent
+#### CCP2 L5.22 Quiz: Explicity vs. Implicit Intents
+#### CCP2 L5.23 Quiz: Exercise: Add a New Activity
+#### CCP2 L5.24 Quiz: Exercise: Send Data
+#### CCP2 L5.25 Quiz: Exercise: Add Sharing
+#### CCP2 L5.26 Recap
 
 ### CCP2 Lesson6 Project Popular Movies Stage1
 #### CCP2 L6.1 Introduction
