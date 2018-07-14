@@ -77,6 +77,16 @@
 
 ### CCP2 Lesson5 Intents
 #### CCP2 L5.1 Introduction
+#### CCP2 L5.2 Sunshine App UX Mocks
+#### CCP2 L5.3 Intents Framework
+#### CCP2 L5.4 Explicit Intent Toy App
+#### CCP2 L5.5 Creating an Activity
+#### CCP2 L5.6 Quiz Exercise Create an Activity
+#### CCP2 L5.7 Creating an Intent
+#### CCP2 L5.8 Quiz: Exercise: Start an Activity
+#### CCP2 L5.9 Passing Data Between Activities
+#### CCP2 L5.10 Quiz: Exercise: Pass Data
+
 #### CCP2 L5.X Recap
 
 ### CCP2 Lesson6 Project Popular Movies Stage1
