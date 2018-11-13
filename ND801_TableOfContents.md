@@ -174,5 +174,5 @@ Introduction to Libraries
 
 ### CCP3 Lesson6 Media Playback - VidBeMaMi
 #### CCP3 L6.1 Introduction to Media Playback
-#### [CCP3 L6.17 Audio Focus and Extra ExoPlayer Features](CCP3 L6.17 Audio Focus and Extra ExoPlayer Features.md)
+#### [CCP3 L6.17 Audio Focus and Extra ExoPlayer Features] (CCP3 L6.17 Audio Focus and Extra ExoPlayer Features.md)
 
