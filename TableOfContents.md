@@ -151,3 +151,9 @@
 ### CCP3 Lesson1 Welcome to Advanced Android
 #### CCP3 L1.1 Welcome to the Course!
 #### CCP3 L1.2 Guide to the Course!
+
+### CCP3 Lesson2 Fragments
+#### CCP3 L1.1 Introduction to Fragments
+#### CCP3 L1.2 Responsive Design
+#### CCP3 L1.25 Fragments Outro
+
