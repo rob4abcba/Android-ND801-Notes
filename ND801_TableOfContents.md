@@ -204,5 +204,11 @@ Introduction to Libraries
 - [ECP1 L2b.3 Resume Structure](ECP1_L2b.3_Resume Structure.md)
 - [ECP1 L2b.4 Describe Your Work Experiences](ECP1_L2b.4_Describe Your Work Experiences.md)
 - [ECP1 L2b.5 Resume Reflection](ECP1_L2b.5_Resume Reflection.md)
+- [ECP1 L2b.6 Resume Reflection](ECP1_L2b.6_Resume Reflection.md)
+- [ECP1 L2b.7 Resume Reflection](ECP1_L2b.7_Resume Reflection.md)
+- [ECP1 L2b.8 Resume Reflection](ECP1_L2b.8_Resume Reflection.md)
+- [ECP1 L2b.9 Resume Reflection](ECP1_L2b.9_Resume Reflection.md)
+
+
 
 
