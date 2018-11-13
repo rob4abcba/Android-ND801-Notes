@@ -197,8 +197,7 @@ Introduction to Libraries
 - [ECP1 L1.4 Open Yourself Up to Opportunity](ECP1_L1.4_Open Yourself Up to Opportunity.md)
 - [ECP1 L1.5 Resources in Your Career Portal](ECP1_L1.5_Resources in Your Career Portal.md)
 
-## ExtraCurricular Part1: Career: Job Search Strategies
-### ECP1 Lesson2b Resume for Career Changers
+### ECP1 Lesson2b Resume for Career Changers -VidDell Refine+Your+Career .zip
 - [ECP1 L2b.1 Convey Your Skills Concisely](ECP1_L2b.1_Convey Your Skills Concisely.md)
 - [ECP1 L2b.2 Effective Resume Components](ECP1_L2b.2_Effective Resume Components.md)
 - [ECP1 L2b.3 Resume Structure](ECP1_L2b.3_Resume Structure.md)
@@ -209,6 +208,8 @@ Introduction to Libraries
 - [ECP1 L2b.8 Resume Reflection](ECP1_L2b.8_Resume Reflection.md)
 - [ECP1 L2b.9 Resume Reflection](ECP1_L2b.9_Resume Reflection.md)
 
-
+### ECP1 Lesson3 Craft your Cover Letter - VidDell Craft+Your+Cover .zip
+- [ECP1 L3.1 Get an Interview with a Cover Letter](ECP1_L3.1_Get an Interview with a Cover Letter.md)
+- [ECP1 L3.2 Purpose of the Cover Letter](ECP1_L3.2_Purpose of the Cover Letter.md)
 
 
