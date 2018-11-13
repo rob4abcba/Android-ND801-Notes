@@ -143,6 +143,11 @@
 #### CCP2 L15.1 Introduction
 #### CCP2 L15.35 Next Steps!
 
+### CCP2 Project: Popular Movies, Stage 2
+#### CCP2 L16.1 Welcome to Popular Movies, Stage 2
+#### CCP2 L16.4 Project: Popular Movies, Stage 2
 
-
-
+## Core Curriculum Part3: Advanced Android App Development
+### CCP3 Lesson1 Welcome to Advanced Android
+#### CCP3 L1.1 Welcome to the Course!
+#### CCP3 L1.2 Guide to the Course!
