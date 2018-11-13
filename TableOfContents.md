@@ -172,7 +172,7 @@ Introduction to Libraries
 #### CCP3 L5.1 Introduction to Places
 #### CCP3 L5.23 Places Outro
 
-### CCP3 Lesson6 Media Playback
+### CCP3 Lesson6 Media Playback - VidBeMaMi
 #### CCP3 L6.1 Introduction to Media Playback
 #### CCP3 L6.17 Audio Focus and Extra ExoPlayer Features
 
