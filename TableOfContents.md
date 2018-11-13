@@ -153,13 +153,22 @@
 #### CCP3 L1.2 Guide to the Course!
 
 ### CCP3 Lesson2 Fragments
-#### CCP3 L1.1 Introduction to Fragments
-#### CCP3 L1.2 Responsive Design
-#### CCP3 L1.25 Fragments Outro
+#### CCP3 L2.1 Introduction to Fragments
+#### CCP3 L2.2 Responsive Design
+#### CCP3 L2.25 Fragments Outro
 
 Introduction to Libraries
 
 ### CCP3 Lesson3 Libraries
-#### CCP3 L1.1 Introduction to Libraries
-#### CCP3 L1.2 A Library You've Already Used
-#### CCP3 L1.26 Libraries Outro
+#### CCP3 L3.1 Introduction to Libraries
+#### CCP3 L3.2 A Library You've Already Used
+#### CCP3 L3.26 Libraries Outro
+
+### CCP3 Lesson4 Firebase Cloud Messaging
+#### CCP3 L4.1 Introduction to FCM
+#### CCP3 L4.20 FCM Outro
+
+
+
+
+
