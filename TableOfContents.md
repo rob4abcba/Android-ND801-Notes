@@ -139,8 +139,9 @@
 #### CCP2 L14.1 Introduction
 #### CCP2 L14.23 Solution: Data Binding in Sunshine
 
-
-
+### CCP2 Lesson15 Polishing the UI
+#### CCP2 L15.1 Introduction
+#### CCP2 L15.35 Next Steps!
 
 
 
