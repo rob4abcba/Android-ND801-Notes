@@ -113,5 +113,5 @@
 
 ### CCP2 Lesson8 Preferences
 #### CCP2 L8.1 Introduction
-#### CCP2 L8.X Recap
+#### CCP2 L8.36 Conclusion
 
