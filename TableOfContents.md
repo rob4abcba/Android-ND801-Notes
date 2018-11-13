@@ -131,6 +131,10 @@
 #### CCP2 L12.1 Introduction
 #### CCP2 L12.27 Recap
 
+### CCP2 Lesson13 Background Tasks
+#### CCP2 L13.1 Introduction
+#### CCP2 L13.34 Conclusion
+
 
 
 
