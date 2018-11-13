@@ -135,6 +135,10 @@
 #### CCP2 L13.1 Introduction
 #### CCP2 L13.34 Conclusion
 
+### CCP2 Lesson14 Completing the UI
+#### CCP2 L14.1 Introduction
+#### CCP2 L14.23 Solution: Data Binding in Sunshine
+
 
 
 
