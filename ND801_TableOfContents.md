@@ -212,4 +212,15 @@ Introduction to Libraries
 - [ECP1 L3.1 Get an Interview with a Cover Letter](ECP1_L3.1_Get an Interview with a Cover Letter.md)
 - [ECP1 L3.2 Purpose of the Cover Letter](ECP1_L3.2_Purpose of the Cover Letter.md)
 
+## ExtraCurricular Part2: Career: Networking
+### ECP2 Lesson1 Develop Your Personal Brand - VidDell
+- [ECP2 L1.1 Why Network?](ECP2_L1.1_Why Network?.md)
+
+### ECP2 Lesson2 LinkedIn Review - NoVid
+- [ECP2 L2.1 Why Network?](ECP2_L1.1_Why Network?.md)
+
+### ECP2 Lesson3 Udacity Professional Profile - NoVid
+- [ECP2 L3.1 Introduction](ECP2_L3.1_Introduction.md)
+
+
 
