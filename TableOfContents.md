@@ -127,6 +127,10 @@
 #### CCP2 L11.1 Introduction
 #### CCP2 L11.45 Outtro
 
+### CCP2 Lesson12 Android Architecture Components
+#### CCP2 L12.1 Introduction
+#### CCP2 L12.27 Recap
+
 
 
 
