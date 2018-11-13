@@ -186,6 +186,23 @@ Introduction to Libraries
 - CCP3 L5.23 Places Outro
 
 ### CCP3 Lesson6 Media Playback - VidBeMaMi
-- [CCP3 L6.1 Introduction to Media Playback](CCP3_L6.1_Introduction to Media Playback.md)
+- [CCP3 L6.1 Introduction to Media Playback](CCP3_L6.1_Introduction_to_Media_Playback.md)
 - [CCP3 L6.17 Audio Focus and Extra ExoPlayer Features](CCP3_L6.17_Audio_Focus_and_Extra_ExoPlayer_Features.md)
+
+## ExtraCurricular Part1: Career: Job Search Strategies
+### ECP1 Lesson1 Conduct a Job Search
+- [ECP1 L1.1 Introduction](ECP1_L1.1_Introduction.md)
+- [ECP1 L1.2 Job Search Mindset](ECP1_L1.2_Job_Search_Mindset.md)
+- [ECP1 L1.3 Target Your Application to An Employer](ECP1_L1.3_Target Your Application to An Employer.md)
+- [ECP1 L1.4 Open Yourself Up to Opportunity](ECP1_L1.4_Open Yourself Up to Opportunity.md)
+- [ECP1 L1.5 Resources in Your Career Portal](ECP1_L1.5_Resources in Your Career Portal.md)
+
+## ExtraCurricular Part1: Career: Job Search Strategies
+### ECP1 Lesson2b Resume for Career Changers
+- [ECP1 L2b.1 Convey Your Skills Concisely](ECP1_L2b.1_Convey Your Skills Concisely.md)
+- [ECP1 L2b.2 Effective Resume Components](ECP1_L2b.2_Effective Resume Components.md)
+- [ECP1 L2b.3 Resume Structure](ECP1_L2b.3_Resume Structure.md)
+- [ECP1 L2b.4 Describe Your Work Experiences](ECP1_L2b.4_Describe Your Work Experiences.md)
+- [ECP1 L2b.5 Resume Reflection](ECP1_L2b.5_Resume Reflection.md)
+
 
