@@ -115,3 +115,7 @@
 #### CCP2 L8.1 Introduction
 #### CCP2 L8.36 Conclusion
 
+### CCP2 Lesson9 Storing Data in SQLite
+#### CCP2 L9.1 Introduction
+#### CCP2 L9.21 Exercise : Resolve Conflicts
+
