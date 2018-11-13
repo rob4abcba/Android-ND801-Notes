@@ -1,8 +1,21 @@
-# Android ND801 Table of Contents
+
+# Android Nanodegree Program ND801
+- - -
+## Table of Contents
+- - -
+#### Core Curriculum Part 1: Nanodegree Orientation
+##### CC Part 1 Lesson 1: Nanodegree Orientation
+- [CC Part 1 Lesson 1.1 Welcome Aboard](ND024_Part1_Lesson01_01.md)
+- [CC Part 1 Lesson 1.2 Who We Are](ND024_Part1_Lesson01_02.md)
+- [CC Part 1 Lesson 1.3 What You'll Build](ND024_Part1_Lesson01_03.md)
+- [CC Part 1 Lesson 1.4 Services Udacity Provides](ND024_Part1_Lesson01_04.md)
+- [CC Part 1 Lesson 1.5 Conclusion](ND024_Part1_Lesson01_05.md)
+
+
 
 ## Core Curriculum Part1: Nanodegree Orientation
 ### CCP1 Lesson1 Welcome to Your Nanodegree
-#### CCP1 L1.1 Your Goals and Motivations
+- [CCP1 L1.1 Your Goals and Motivations](CCP1_L1.1_Your_Goals_and_Motivations.md)
 #### CCP1 L1.2 Welcome to Your Nanodegree
 #### CCP1 L1.3 Nanodegree Support Resources
 #### CCP1 L1.4 Meet the Careers Team
@@ -174,5 +187,5 @@ Introduction to Libraries
 
 ### CCP3 Lesson6 Media Playback - VidBeMaMi
 #### CCP3 L6.1 Introduction to Media Playback
-#### [CCP3 L6.17 Audio Focus and Extra ExoPlayer Features]
+- [CCP3 L6.17 Audio Focus and Extra ExoPlayer Features](CCP3_L6.17_Audio_Focus_and_Extra_ExoPlayer_Features.md)
 
