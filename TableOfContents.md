@@ -157,3 +157,9 @@
 #### CCP3 L1.2 Responsive Design
 #### CCP3 L1.25 Fragments Outro
 
+Introduction to Libraries
+
+### CCP3 Lesson3 Libraries
+#### CCP3 L1.1 Introduction to Libraries
+#### CCP3 L1.2 A Library You've Already Used
+#### CCP3 L1.26 Libraries Outro
