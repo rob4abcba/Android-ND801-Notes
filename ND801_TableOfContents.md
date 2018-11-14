@@ -225,7 +225,7 @@ Introduction to Libraries
 
 ### ECP2 Lesson3 Udacity Professional Profile - NoVid, but does have a handbook ( https://s3.amazonaws.com/video.udacity-data.com/topher/2017/August/5991ee25_and-student-handbook/and-student-handbook.pdf ) = good printed content in the lessons
 - [ECP2 L3.1 Introduction](ECP2_L3.1_Introduction.md)
-- [ECP2 L3.1 Introduction](ECP2_L3.1_Introduction.md)
+- [ECP2 L3.2 Getting Started](ECP2_L3.2_Getting_Started.md)
 - [ECP2 L3.1 Introduction](ECP2_L3.1_Introduction.md)
 - [ECP2 L3.1 Introduction](ECP2_L3.1_Introduction.md)
 - [ECP2 L3.1 Introduction](ECP2_L3.1_Introduction.md)
