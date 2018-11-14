@@ -1,5 +1,5 @@
 GitHub Repo Search Code
-The code for this app can be found in the Lesson02-GitHub-Repo-Search folder of the Toy App Repository.
+The code for this app can be found in the [Lesson02-GitHub-Repo-Search](https://github.com/udacity/ud851-Exercises/tree/student/Lesson02-GitHub-Repo-Search) folder of the [Toy App Repository](https://github.com/udacity/ud851-Exercises).
 
 If you need a refresher on how the code is organized, please refer the concept where we introduced the code flow.
 
