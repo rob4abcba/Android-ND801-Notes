@@ -32,9 +32,9 @@
 - CCP2 L2.1 Introduction
 - [CCP2 L2.2 Logging](CCP2_L2.2_Logging.md)
 - [CCP2 L2.3 Internet Toy App Intro](CCP2_L2.3_Internet_Toy_App_Intro.md)
-- CCP2 L2.4 Exercise: Create a Layout
-- CCP2 L2.5 Resources
-- CCP2 L2.6 On Menus
+- [CCP2 L2.4 Exercise: Create a Layout](CCP2_L2.4_Exercise:_Create_a_Layout.md)
+- [CCP2 L2.5 Resources](CCP2_L2.5_Resources.md)
+- [CCP2 L2.6 On Menus](CCP2_L2.6_On_Menus.md)
 - CCP2 L2.7 Exercise: Add a Menu
 - CCP2 L2.8 Exercise: Build our URL
 - CCP2 L2.9 Fetching an HTTP Request
