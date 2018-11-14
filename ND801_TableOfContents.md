@@ -38,7 +38,7 @@
 - CCP2 L2.7 Exercise: Add a Menu
 - CCP2 L2.8 Exercise: Build our URL
 - CCP2 L2.9 Fetching an HTTP Request
-- CCP2 L2.10 Permissions
+- [CCP2 L2.10 Permissions](CCP2_L2.10_Permissions.md)
 - CCP2 L2.11 Quiz: Permissions
 - CCP2 L2.12 Exercise: Connect to the Internet
 - CCP2 L2.13 Thread Basics
