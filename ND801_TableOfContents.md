@@ -30,7 +30,7 @@
 
 ### CCP2 Lesson2 Connect to the Internet
 - CCP2 L2.1 Introduction
-- CCP2 L2.2 Logging
+- [CCP2 L2.2 Logging](CCP2_L2.2_Logging.md)
 - CCP2 L2.3 Internet Toy App Intro
 - CCP2 L2.4 Exercise: Create a Layout
 - CCP2 L2.5 Resources
