@@ -222,5 +222,17 @@ Introduction to Libraries
 ### ECP2 Lesson3 Udacity Professional Profile - NoVid
 - [ECP2 L3.1 Introduction](ECP2_L3.1_Introduction.md)
 
+### ECP2 Lesson4 Optimize your GitHub Profile - VidDell
+- [ECP2 L4.1 Introduction](ECP2_L3.1_Introduction.md)
+
+## ExtraCurricular Part3: Career: Android Interview Practic
+### ECP3 Lesson1 Interview Practice (Android) - VidDell
+- [ECP3 L1.1 Analyzing an Interview](ECP2_L1.1_Analyzing an Interview.md)
+
+### ECP3 Lesson2 Interview Practice (Android) - VidDell
+- [ECP3 L2.1 Analyzing an Interview](ECP2_L1.1_Analyzing an Interview.md)
+
+
+
 
 
