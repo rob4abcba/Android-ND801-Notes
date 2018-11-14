@@ -190,14 +190,16 @@ Introduction to Libraries
 - [CCP3 L6.17 Audio Focus and Extra ExoPlayer Features](CCP3_L6.17_Audio_Focus_and_Extra_ExoPlayer_Features.md)
 
 ## ExtraCurricular Part1: Career: Job Search Strategies
-### ECP1 Lesson1 Conduct a Job Search
+### ECP1 Lesson1 Conduct a Job Search - VidDell Conduct+a+job+Search .zip
 - [ECP1 L1.1 Introduction](ECP1_L1.1_Introduction.md)
 - [ECP1 L1.2 Job Search Mindset](ECP1_L1.2_Job_Search_Mindset.md)
 - [ECP1 L1.3 Target Your Application to An Employer](ECP1_L1.3_Target Your Application to An Employer.md)
 - [ECP1 L1.4 Open Yourself Up to Opportunity](ECP1_L1.4_Open Yourself Up to Opportunity.md)
 - [ECP1 L1.5 Resources in Your Career Portal](ECP1_L1.5_Resources in Your Career Portal.md)
 
-### ECP1 Lesson2b Resume for Career Changers -VidDell Refine+Your+Career .zip
+### ECP1 Lesson2a Resume for Entry Level - VidDell Refine+Your+Entry+Level .zip
+
+### ECP1 Lesson2b Resume for Career Changers - VidDell Refine+Your+Career .zip
 - [ECP1 L2b.1 Convey Your Skills Concisely](ECP1_L2b.1_Convey Your Skills Concisely.md)
 - [ECP1 L2b.2 Effective Resume Components](ECP1_L2b.2_Effective Resume Components.md)
 - [ECP1 L2b.3 Resume Structure](ECP1_L2b.3_Resume Structure.md)
@@ -208,19 +210,28 @@ Introduction to Libraries
 - [ECP1 L2b.8 Resume Reflection](ECP1_L2b.8_Resume Reflection.md)
 - [ECP1 L2b.9 Resume Reflection](ECP1_L2b.9_Resume Reflection.md)
 
+### ECP1 Lesson2c Resume for Prior Industry Experience - VidDell Refine+Your+Prior .zip
+
 ### ECP1 Lesson3 Craft your Cover Letter - VidDell Craft+Your+Cover .zip
 - [ECP1 L3.1 Get an Interview with a Cover Letter](ECP1_L3.1_Get an Interview with a Cover Letter.md)
 - [ECP1 L3.2 Purpose of the Cover Letter](ECP1_L3.2_Purpose of the Cover Letter.md)
 
 ## ExtraCurricular Part2: Career: Networking
-### ECP2 Lesson1 Develop Your Personal Brand - VidDell
+### ECP2 Lesson1 Develop Your Personal Brand - VidDell Develop+Your+Personal .zip
 - [ECP2 L1.1 Why Network?](ECP2_L1.1_Why Network?.md)
 
 ### ECP2 Lesson2 LinkedIn Review - NoVid
 - [ECP2 L2.1 Why Network?](ECP2_L1.1_Why Network?.md)
 
-### ECP2 Lesson3 Udacity Professional Profile - NoVid
+### ECP2 Lesson3 Udacity Professional Profile - NoVid, but does have a handbook ( https://s3.amazonaws.com/video.udacity-data.com/topher/2017/August/5991ee25_and-student-handbook/and-student-handbook.pdf ) = good printed content in the lessons
 - [ECP2 L3.1 Introduction](ECP2_L3.1_Introduction.md)
+- [ECP2 L3.1 Introduction](ECP2_L3.1_Introduction.md)
+- [ECP2 L3.1 Introduction](ECP2_L3.1_Introduction.md)
+- [ECP2 L3.1 Introduction](ECP2_L3.1_Introduction.md)
+- [ECP2 L3.1 Introduction](ECP2_L3.1_Introduction.md)
+- [ECP2 L3.1 Introduction](ECP2_L3.1_Introduction.md)
+
+
 
 ### ECP2 Lesson4 Optimize your GitHub Profile - VidDell
 - [ECP2 L4.1 Introduction](ECP2_L3.1_Introduction.md)
