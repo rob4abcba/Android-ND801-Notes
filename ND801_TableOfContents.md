@@ -189,6 +189,32 @@ Introduction to Libraries
 - [CCP3 L6.1 Introduction to Media Playback](CCP3_L6.1_Introduction_to_Media_Playback.md)
 - [CCP3 L6.17 Audio Focus and Extra ExoPlayer Features](CCP3_L6.17_Audio_Focus_and_Extra_ExoPlayer_Features.md)
 
+### CCP3 Lesson7 Widgets - VidBeMaMi
+- [CCP3 L6.1 Introduction to Media Playback](CCP3_L6.1_Introduction_to_Media_Playback.md)
+- [CCP3 L6.17 Audio Focus and Extra ExoPlayer Features](CCP3_L6.17_Audio_Focus_and_Extra_ExoPlayer_Features.md)
+
+### CCP3 Lesson8 Espresso - VidBeMaMi
+- [CCP3 L6.1 Introduction to Media Playback](CCP3_L6.1_Introduction_to_Media_Playback.md)
+- [CCP3 L6.17 Audio Focus and Extra ExoPlayer Features](CCP3_L6.17_Audio_Focus_and_Extra_ExoPlayer_Features.md)
+
+### CCP3 Lesson9 Publishing Your App - VidBeMaMi
+- [CCP3 L6.1 Introduction to Media Playback](CCP3_L6.1_Introduction_to_Media_Playback.md)
+- [CCP3 L6.17 Audio Focus and Extra ExoPlayer Features](CCP3_L6.17_Audio_Focus_and_Extra_ExoPlayer_Features.md)
+
+### CCP3 Lesson10 Baking App - NoVid
+- [CCP3 L6.1 Introduction to Media Playback](CCP3_L6.1_Introduction_to_Media_Playback.md)
+- [CCP3 L6.17 Audio Focus and Extra ExoPlayer Features](CCP3_L6.17_Audio_Focus_and_Extra_ExoPlayer_Features.md)
+
+## Core Curriculum Part4: Gradle for Android and Java
+### CCP4 Lesson1 Gradle Fundamentals
+- CCP4 L1.1 Welcome to Gradle for Android and Java
+- CCP4 L1.2 Java and Android Builds
+- CCP4 L1.3 Java and Android Builds
+- CCP4 L1.4 Java and Android Builds
+- CCP4 L1.5 Java and Android Builds
+- CCP4 L1.6 Command Line Gradle](CCP4-L1.6-Command-Line-Gradle.md)
+
+
 ## ExtraCurricular Part1: Career: Job Search Strategies
 ### ECP1 Lesson1 Conduct a Job Search - VidDell Conduct+a+job+Search .zip
 - [ECP1 L1.1 Introduction](ECP1_L1.1_Introduction.md)
