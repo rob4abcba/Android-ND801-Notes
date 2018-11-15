@@ -213,7 +213,7 @@ Introduction to Libraries
 - CCP4 L1.4 Java and Android Builds
 - CCP4 L1.5 Java and Android Builds
 - [CCP4 L1.6 Command Line Gradle](CCP4-L1.6-Command-Line-Gradle.md)
-- [CCP4 L1.7 Command Line Gradle](CCP4-L1.6-Command-Line-Gradle.md)
+- [CCP4 L1.7 Quiz: Run Your First Task](CCP4-L1.7-Quiz-Run-Your-First-Task.md)
 - [CCP4 L1.8 Command Line Gradle](CCP4-L1.6-Command-Line-Gradle.md)
 - [CCP4 L1.9 Command Line Gradle](CCP4-L1.6-Command-Line-Gradle.md)
 - [CCP4 L1.10 Gradle Build Scripts](CCP4-L1.10-Gradle-Build-Scripts.md)
