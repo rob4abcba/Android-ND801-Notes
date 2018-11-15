@@ -5,9 +5,9 @@ Gradle wrapper = just shell scripts
 - gradlew.bat for Windows
 
 To run the gradle shell script, type at the command line
-> ./gradlew 
-> ./gradlew tasks
-> ./gradlew hello
+- ./gradlew 
+- ./gradlew tasks
+- ./gradlew hello
 
 When using the command line, you have to explicity tell Gradle that you want it to run in the background (i.e. daemon).
 You want it to run in the background (daemon), so that you can still execute your main work in the foreground.
